@@ -1,0 +1,100 @@
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    text-decoration: underline;
+
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    place-content: center;
+    height: 95vh;
+    line-height: 2;
+    background-color: rgb(22, 33, 62);
+}
+
+
+
+form {
+    line-height: 1;
+    border: 0px solid white;
+    border-radius: 2rem;
+    background-color: rgb(46, 153, 248);
+    box-shadow: 2px 2px 30px white;
+    /* background-color: white ; */
+}
+
+
+
+.login-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* flex-direction: column; */
+    line-height: 2.5;
+    /* display: ; */
+    /* justify-content: center; */
+    /* place-items: center; */
+    /* align-items: center; */
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.login-form input {
+    border: 2px solid rgb(17, 160, 255);
+    /* background-color: rgb(17, 160, 255); */
+    border-radius: .5rem;
+    height: 2rem;
+    padding-left: 1rem;
+    /* width: 1rem; */
+    /* background-color: rgb(46, 153, 248); */
+}
+
+.login-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* align-items: center; */
+    place-items: center;
+}
+
+.login-button input {
+    border: 0;
+    height: 2rem;
+    width: 10vw;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(54, 165, 245);
+    border-radius: 1rem;
+    /* margin-bottom: 2rem; */
+    box-shadow: 2px 2px 40px white;
+
+
+}
+
+.register-btn {
+    border: 2px solid #ffffff;
+    background-color: rgb(255, 255, 255);
+    padding: .25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 20px white;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.register-btn-div {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    /* background-color: whitesmoke; */
+}

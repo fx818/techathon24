@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Requests</title>
+    <link rel="stylesheet" href="{% static 'allreq.css' %}">
+</head>
+
+<body>
+    <h1>EDITH</h1>
+    <h2>All Applications :</h2>
+    
+    <div class="requests">
+
+        {% for data in values %}
+
+    <ul>
+
+        {% for val in data %}
+        <li>
+
+            {{val}}
+        </li>
+
+        {% endfor %}
+
+    </ul>
+    <br>
+    {% endfor %}
+
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(22, 33, 62); color: white;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDITH</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Madimi+One&family=Nabla&family=Ojuju:wght@200..800&family=Protest+Riot&family=Rubik+Doodle+Shadow&family=Rubik+Maps&family=Satisfy&family=Sevillana&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <h1 style="background-color: rgb(22, 33, 62); text-align: center; font-size: 4rem; margin: -1rem; font-family: 'Madimi One';font-weight: 400; font-style: normal;">
+        EDITH 
+    </h1>
+    <h1 style="background-color: rgb(22, 33, 62); text-align: center; margin: 0;">Login Page</h1>
+    <form method="POST" action="index" autocomplete="off" style="background-color: rgb(22, 33, 62)">
+
+        {% csrf_token %}
+
+        <h2>Login Now</h2>
+
+        <div class="login-form">
+            <div>
+                <label>Username :</label>
+                <input type="text" name="username" placeholder="Username">
+            </div>
+
+            <div>
+                <label>Password :</label>
+                <input type="password" name="password1" placeholder="Password">
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="login-button">
+            <input type="submit" value="Login">
+            <p style="color: rgb(255, 243, 17); text-align: center;">{{error}}</p>
+        </div>
+
+    </form>
+
+    <br>
+
+    <div class="register-btn-div">
+        <a href="register" class="register-btn">Register Now</a>
+    </div>
+
+
+
+</body>
+
+</html>

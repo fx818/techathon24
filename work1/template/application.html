@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now</title>
+    <link rel="stylesheet" href="{% static 'application.css' %}">
+</head>
+
+<body>
+    <h1 style="font-size: 3rem;">Team EDITH</h1>
+    <h1>Apply Now</h1>
+
+    <form action="application" method="POST">
+        {% csrf_token %}
+
+        <div>
+            <label>Full name :</label>
+            <input type="text" name="name" placeholder="Your full name here">
+        </div>
+
+        <div>
+            <label>Email :</label>
+            <input type="email" name="email"  placeholder="Your email address">
+        </div>
+
+        <div>
+            <label>Mobile No. :</label>
+            <input type="number" name="mobile"  placeholder="9151XXXXXX">
+        </div>
+
+        <div>
+            <label>Applying for Role of :</label>
+            <input type="text" name="role" placeholder="E.g Devin">
+        </div>
+
+        <div>
+            <label>Highest Education :</label>
+            <input type="text" name="education" placeholder="BTech/Mtech etc..">
+        </div>
+
+        <div>
+            <label>Previous Experiences :</label>
+            <input type="text" name="experience" placeholder="If any">
+        </div>
+
+        <div>
+            <label>Referral (Optional) :</label>
+            <input type="text" name="referral" placeholder="Any recognised personality">
+        </div>
+
+        <div>
+            <label>Resume :</label>
+            <input type="file" name="resume">
+        </div>
+
+        <!-- <center> -->
+            <!-- </center> -->
+            
+            
+            <div class="submit">
+                <!-- <label></label> -->
+                <input type="submit" name="Submit" value="Submit">
+            </div>
+        </form>
+
+        <br><br>
+        <div>
+            <a href="allrequests" style="color: white;">See all requests</a>
+        </div>
+
+
+</body>
+
+</html>
