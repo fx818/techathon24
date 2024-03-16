@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>News & Insights</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #16213E;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        #header {
+            background-color: #16213E;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        #topics {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .links {
+            color: #16213E;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .links:hover {
+            color: #0066ff;
+        }
+
+        #articles {
+            overflow-y: auto; /* Add scroll feature */
+            max-height: 800px; /* Set max height for scroll */
+            padding: 1rem;
+            width: 100%;
+        }
+
+        .article {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem; /* Add margin for spacing */
+        }
+
+        .article-content {
+            padding: 1rem;
+        }
+
+        .article-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .article-description {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-info {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .read-more {
+            color: #0066ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #003399;
+        }
+
+        #right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            width: 30%;
+        }
+
+        #search-area,
+        #upload-area {
+            margin-bottom: 1.5rem;
+        }
+
+        #searchbox,
+        #uploadbox {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 0.5rem;
+            resize: none;
+        }
+
+        #search,
+        #upload {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #16213E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #search:hover,
+        #upload:hover {
+            background-color: #0066ff;
+        }
+
+        .whole {
+            display: flex;
+            row-gap: 1rem;
+        }
+        @media (max-width:650px){
+            .whole {
+            display: block;
+            /* row-gap: 1rem; */
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        News & Insights
+    </div>
+
+    <div id="topics">
+        <p>Explore Topics: <a href="#" class="links">Industry Trends</a> | <a href="#" class="links">Career Advice</a> | <a href="#" class="links">Remote Work</a> | <a href="#" class="links">Events and Conferences</a> | <a href="#" class="links">Success Stories</a></p>
+    </div>
+
+    <div class="whole">
+
+
+        <div id="articles">
+            <div class="article">
+                <div class="article-content">
+                    <h2 class="article-title">Exploring Emerging Trends in the Job Market</h2>
+                    <p class="article-description">Stay ahead of the curve by learning about the latest developments in various industries. Discover emerging job roles, technological advancements, and market demands to tailor your job search strategy effectively.</p>
+                    <div class="article-info">
+                        <i class="fas fa-calendar-alt"></i> March 15, 2024
+                    </div>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <h2 class="article-title">Monthly Job Market Report: January Edition</h2>
+                    <p class="article-description">Stay informed about the latest job market trends and statistics. Our monthly report provides valuable insights into hiring trends, job growth projections, and economic indicators affecting job seekers.</p>
+                    <div class="article-info">
+                        <i class="fas fa-calendar-alt"></i> March 10, 2024
+                    </div>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- Add more articles here -->
+            <div class="article">
+                <div class="article-content">
+                    <h2 class="article-title">Navigating Workplace Diversity</h2>
+                    <p class="article-description">Gain insights into fostering an inclusive and diverse workplace culture. Discover strategies for promoting equity, embracing diverse perspectives, and creating a supportive environment where everyone can thrive.</p>
+                    <div class="article-info">
+                        <i class="fas fa-calendar-alt"></i> March 2, 2024
+                    </div>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <h2 class="article-title">Unlocking In-Demand Skills</h2>
+                    <p class="article-description">Enhance your skill set and boost your career prospects with our curated selection of in-demand skills. From technical expertise to soft skills, discover resources and training opportunities to stay competitive in today's job market.</p>
+                    <div class="article-info">
+                        <i class="fas fa-calendar-alt"></i> February 25, 2024
+                    </div>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-content">
+                    <h2 class="article-title">Upcoming Industry Events: March Highlights</h2>
+                    <p class="article-description">Stay informed about upcoming industry conferences, seminars, and networking events. Discover opportunities to expand your professional network, gain insights from industry experts, and stay up-to-date with the latest trends and developments.</p>
+                    <div class="article-info">
+                        <i class="fas fa-calendar-alt"></i> March 10, 2024
+                    </div>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="right">
+            <div id="search-area">
+                <textarea id="searchbox" rows="4" cols="30" placeholder="Search for articles"></textarea>
+                <button id="search">Search</button>
+            </div>
+            <div id="upload-area">
+                <textarea id="uploadbox" rows="4" cols="30" placeholder="Upload your articles"></textarea>
+                <button id="upload">Upload</button>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

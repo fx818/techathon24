@@ -1,0 +1,139 @@
+*{
+    padding: 0px;
+    margin:0px;
+    font-size: 18px;
+}
+
+#header{
+    display:flex;
+    flex-wrap:wrap;
+    background-color: #16213E;
+    color:white;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-bottom:0rem;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;    
+}
+.link{
+    font-size: 1.5rem;
+    color:white;
+    text-decoration: none;
+}
+
+#image{
+    height: 20rem;
+    width:20rem;
+    background-size: cover;
+    margin-left: 8rem;
+    margin-top: 6rem;
+}
+
+#image{
+    width:45%;
+}
+#bodys{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:-2rem;
+}
+
+#content{
+    width:40%;
+    padding:2rem;
+    margin-top: 6rem;
+}
+
+#name{
+    color:#16213E;
+    font-weight: bold;
+    font-size:4rem;
+}
+
+#contentbody{
+    font-size: 1.5rem;
+    color:#16213E;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#loginbutton{
+    background-color: #16213E;
+    color:white;
+    padding:1rem;
+    border:none;
+    border-radius: 10%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#loginbutton:hover{
+    cursor: pointer;
+}
+
+#footer{
+    background-color: #16213E;
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-evenly;
+    padding:1rem;
+    margin-top:5rem;
+    /* margin-bottom: -2rem; */
+    position: inherit;
+    bottom: 0;
+}
+
+.link2{
+    font-size:1rem;
+    text-decoration: none;
+    color:white;
+}
+
+
+@media all and (min-width:900px) and (max-width:1280px){
+    #image1{
+        width:100%;
+    }
+    #bodys{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+    #image{
+        width:40%;
+    }
+    #content{
+        width:20%;
+        margin-left:3rem;
+    }
+    #heading{
+        font-size: 3rem;
+    }
+    #contentbody{
+        font-size:1rem;
+    }
+}
+
+@media all and (max-width:900px){
+    #image1{
+        width:100%;
+    }
+    #bodys{
+        display: block;
+        justify-content: center;
+        margin-left: 0rem;
+    }
+    #image{
+        width:60%;
+    }
+    #content{
+        width:60%;
+        margin-left:9rem;
+    }
+    #heading{
+        font-size: 3rem;
+    }
+    #contentbody{
+        font-size:1rem;
+    }
+
+}
